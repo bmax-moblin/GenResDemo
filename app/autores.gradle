@@ -1,0 +1,35 @@
+task genStrings(type: dev.bmax.GenStringsTask) {
+    strings = {
+        textViewText 'Hello world!'
+    }
+}
+
+task genDimensions(type: dev.bmax.GenDimensTask) {
+    dimens = {
+        textViewMarginLeft '32dp'
+        textViewMarginTop '32dp'
+        textViewTextSize '24sp'
+    }
+}
+
+task genColors(type: dev.bmax.GenColorsTask) {
+    colors = {
+        textViewTextColor '#FF8000'
+    }
+}
+
+/**
+ * Run this task to generate the XML files using the name/value
+ * pairs provided above (Right click -> Run).
+ */
+task genResFiles() {
+    dependsOn getTasks().findByName('genStrings')
+    dependsOn getTasks().findByName('genDimensions')
+    dependsOn getTasks().findByName('genColors')
+}
+
+buildscript {
+    dependencies {
+        classpath files('libs/GenResTasks.jar')
+    }
+}

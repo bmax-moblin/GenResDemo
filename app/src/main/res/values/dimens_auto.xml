@@ -1,0 +1,5 @@
+<resources>
+  <dimen name="textViewMarginLeft">32dp</dimen>
+  <dimen name="textViewMarginTop">32dp</dimen>
+  <dimen name="textViewTextSize">24sp</dimen>
+</resources>
