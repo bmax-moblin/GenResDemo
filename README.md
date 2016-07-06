@@ -22,8 +22,6 @@ task genDimensions(type: dev.bmax.GenDimensTask) {
 </pre></code>
 Note, currently resDir doesn't support nonexistent directories.
 
-See the full Gradle script: https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle
-
 In order to use the above custom Gradle tasks, drop GenResTasks.jar into /app/libs and specify the dependency 
 in the Gradle script:
 <code><pre>
@@ -33,3 +31,5 @@ buildscript {
     }
 }
 </pre></code>
+
+See the full Gradle script: https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle
