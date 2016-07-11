@@ -10,8 +10,7 @@ task genDimensions(type: dev.bmax.GenDimensTask) {
 }
 </pre></code>
 
-Default destination file name and directory can be overriden by a child task:
-<code><pre>
+Default destination file name and directory can be overriden by a child task:<code><pre>
 task genDimensions(type: dev.bmax.GenDimensTask) {
     resDir = '/src/main/res/values-hdpi/'
     fileName = 'dimens_new.xml'
@@ -32,4 +31,4 @@ buildscript {
 }
 </pre></code>
 
-See the full Gradle [script] (https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle)
+See the full [example] (https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle)
