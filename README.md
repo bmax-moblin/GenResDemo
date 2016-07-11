@@ -32,4 +32,4 @@ buildscript {
 }
 </pre></code>
 
-See the full Gradle script: https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle
+See the full Gradle [script] (https://github.com/bmax-moblin/GenResDemo/blob/master/app/autores.gradle)
