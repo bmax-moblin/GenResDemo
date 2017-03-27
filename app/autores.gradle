@@ -20,7 +20,7 @@ task genColors(type: dev.bmax.GenColorsTask) {
 
 /**
  * Run this task to generate the XML files using the name/value
- * pairs provided above (Right click -> Run).
+ * pairs provided above (gradlew -b app/autores.gradle genResFiles).
  */
 task genResFiles() {
     dependsOn getTasks().findByName('genStrings')
